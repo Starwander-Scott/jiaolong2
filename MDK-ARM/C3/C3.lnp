@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"c3\startup_stm32f407xx.o"
+"c3\main.o"
+"c3\gpio.o"
+"c3\dma.o"
+"c3\usart.o"
+"c3\stm32f4xx_it.o"
+"c3\stm32f4xx_hal_msp.o"
+"c3\callback.o"
+"c3\stm32f4xx_hal_uart.o"
+"c3\stm32f4xx_hal_rcc.o"
+"c3\stm32f4xx_hal_rcc_ex.o"
+"c3\stm32f4xx_hal_flash.o"
+"c3\stm32f4xx_hal_flash_ex.o"
+"c3\stm32f4xx_hal_flash_ramfunc.o"
+"c3\stm32f4xx_hal_gpio.o"
+"c3\stm32f4xx_hal_dma_ex.o"
+"c3\stm32f4xx_hal_dma.o"
+"c3\stm32f4xx_hal_pwr.o"
+"c3\stm32f4xx_hal_pwr_ex.o"
+"c3\stm32f4xx_hal_cortex.o"
+"c3\stm32f4xx_hal.o"
+"c3\stm32f4xx_hal_exti.o"
+"c3\system_stm32f4xx.o"
+--strict --scatter "C3\C3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "C3.map" -o C3\C3.axf
