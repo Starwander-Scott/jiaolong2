@@ -7,6 +7,7 @@
 "c3\stm32f4xx_it.o"
 "c3\stm32f4xx_hal_msp.o"
 "c3\callback.o"
+"c3\rc.o"
 "c3\stm32f4xx_hal_uart.o"
 "c3\stm32f4xx_hal_rcc.o"
 "c3\stm32f4xx_hal_rcc_ex.o"

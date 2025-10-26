@@ -582,6 +582,16 @@
               <FileType>8</FileType>
               <FilePath>..\Core\Src\callback.cpp</FilePath>
             </File>
+            <File>
+              <FileName>rc.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\rc.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>rc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Core\Inc\rc.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -3,10 +3,12 @@
 //
 #include "rc.h"
 #include <stdint.h>
+#include <cstring>
 
 //从364-1684线性映射到-1-1
 
-
+// 在 rc.h 或相应头文件中
+extern uint8_t rx_buffer[18];
 
 
 
@@ -14,9 +16,14 @@ float linear_mapping(float x, uint16_t in_min, uint16_t in_max, float out_min, f
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
+
+rc::rc() {
+//  this->init();
+
+}
 void rc::init(){
-  memcpy(rx_data,rx_buffer,18);
-  parse_control_frame(rx_data);
+  memcpy(this->rx_data,rx_buffer,18);
+  this->parse_control_frame(this->rx_data);
 }
 
 
@@ -42,9 +49,32 @@ void rc::parse_control_frame(uint8_t* rx_data) {
   uint16_t channel1 = linear_mapping(raw_ch1, 364, 1684, -1, 1);
   uint16_t channel2 = linear_mapping(raw_ch2, 364, 1684, -1, 1);
   uint16_t channel3 = linear_mapping(raw_ch3, 364, 1684, -1, 1);
+  switch (raw_s1) {
+    case 1:
+      s1 = UP_LEFT;
+      break;
+    case 2:
+      s1 = MID_LEFT;
+      break;
+    case 3:
+      s1 = DOWN_LEFT;
+      break;
 
+  }
+  switch (raw_s2) {
+    case 1:
+      s2 = UP_RIGHT;
+      break;
+    case 2:
+      s2 = MID_RIGHT;
+      break;
+    case 3:
+      s2 = DOWN_RIGHT;
+      break;
+  }
 }
 
+rc rc1;
 
 //extern uint8_t rx_buffer[18];
 

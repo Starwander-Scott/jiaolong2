@@ -21,7 +21,7 @@ private:
 
 
 public:
-
+  rc();
   void parse_control_frame(uint8_t* rx_buffer);
   //void calc();
   void init();
