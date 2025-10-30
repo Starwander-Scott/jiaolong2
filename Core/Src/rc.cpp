@@ -9,10 +9,10 @@
 
 // 在 rc.h 或相应头文件中
 extern uint8_t rx_buffer[18];
+extern rc rc1;
 
 
-
-float linear_mapping(float x, uint16_t in_min, uint16_t in_max, float out_min, float out_max){
+float rc::linear_mapping(float x, uint16_t in_min, uint16_t in_max, float out_min, float out_max){
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
@@ -22,15 +22,21 @@ rc::rc() {
 
 }
 void rc::init(){
-  memcpy(this->rx_data,rx_buffer,18);
-  this->parse_control_frame(this->rx_data);
+  // memcpy(this->rx_data,rx_buffer,18);
+  // this->parse_control_frame(this->rx_data);
+  channel0 = 0.f;
+  channel1 = 0.f;
+  channel2 = 0.f;
+  channel3 = 0.f;
+
 }
 
 
 
 // 高性能版本 - 直接位运算
-void rc::parse_control_frame(uint8_t* rx_data) {
+void rc::handle(uint8_t* rx_data) {
   // 将前6个字节视为48位数据（实际使用前48位）
+  rx_data_ = rx_buffer;
   uint64_t data = 0;
   for (int i = 0; i < 6; i++) {
     data |= ((uint64_t)rx_data[i]) << (8 * i);
@@ -45,36 +51,36 @@ void rc::parse_control_frame(uint8_t* rx_data) {
   uint8_t raw_s2 = (data >> 46) & 0x03;    // 位46-47: S2
 
   // 转换为实际物理值
-  uint16_t channel0 = linear_mapping(raw_ch0, 364, 1684, -1, 1);
-  uint16_t channel1 = linear_mapping(raw_ch1, 364, 1684, -1, 1);
-  uint16_t channel2 = linear_mapping(raw_ch2, 364, 1684, -1, 1);
-  uint16_t channel3 = linear_mapping(raw_ch3, 364, 1684, -1, 1);
+  channel0 = linear_mapping(raw_ch0, 364, 1684, -1, 1);
+  channel1 = linear_mapping(raw_ch1, 364, 1684, -1, 1);
+  channel2 = linear_mapping(raw_ch2, 364, 1684, -1, 1);
+  channel3 = linear_mapping(raw_ch3, 364, 1684, -1, 1);
   switch (raw_s1) {
     case 1:
-      s1 = UP_LEFT;
+      s1 = UP;
       break;
     case 2:
-      s1 = MID_LEFT;
+      s1 = DOWN;
       break;
     case 3:
-      s1 = DOWN_LEFT;
+      s1 = MID;
       break;
 
   }
   switch (raw_s2) {
     case 1:
-      s2 = UP_RIGHT;
+      s2 = UP;
       break;
     case 2:
-      s2 = MID_RIGHT;
+      s2 = DOWN;
       break;
     case 3:
-      s2 = DOWN_RIGHT;
+      s2 = MID;
       break;
   }
 }
 
-rc rc1;
+// rc rc1;
 
 //extern uint8_t rx_buffer[18];
 
