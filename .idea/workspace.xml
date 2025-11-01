@@ -28,7 +28,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0c1657-647c-4053-80d8-267c0500719f" name="Changes" comment="feat:task 1 completed">
+    <list default="true" id="4f0c1657-647c-4053-80d8-267c0500719f" name="Changes" comment="feat:task 2 completed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserCode/Src/user_tasks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/UserCode/Src/user_tasks.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761968603692</updated>
-      <workItem from="1761968605498" duration="11297000" />
+      <workItem from="1761968605498" duration="11957000" />
     </task>
     <task id="LOCAL-00001" summary="feat:this is my first commit in the final task">
       <option name="closed" value="true" />
@@ -202,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761979653703</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat:task 2 completed">
+      <option name="closed" value="true" />
+      <created>1761982411462</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761982411462</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +236,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat:this is my first commit in the final task" />
     <MESSAGE value="feat:task 1 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:task 1 completed" />
+    <MESSAGE value="feat:task 2 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:task 2 completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -235,11 +245,6 @@
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/UserCode/Inc/user_tasks.h</url>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/UserCode/Src/user_tasks.cpp</url>
-          <line>50</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
