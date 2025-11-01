@@ -28,7 +28,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0c1657-647c-4053-80d8-267c0500719f" name="Changes" comment="feat:task 2 completed">
+    <list default="true" id="4f0c1657-647c-4053-80d8-267c0500719f" name="Changes" comment="feat:task 3 completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserCode/Src/user_tasks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/UserCode/Src/user_tasks.cpp" afterDir="false" />
     </list>
@@ -86,21 +86,32 @@
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="LiveWatchesService">
     <items>
-      <expr>count</expr>
-      <expr>count</expr>
-      <expr>send</expr>
       <expr>recv</expr>
+      <expr>send1</expr>
+      <expr>send2</expr>
     </items>
     <columns>
-      <column name="livewatches.column.name.watch" width="263" />
-      <column name="livewatches.column.name.type" width="263" />
-      <column name="livewatches.column.name.value" width="263" />
-      <column name="livewatches.column.name.max" width="263" />
-      <column name="livewatches.column.name.min" width="263" />
-      <column name="livewatches.column.name.changes" width="263" />
+      <column name="livewatches.column.name.watch" width="261" />
+      <column name="livewatches.column.name.type" width="261" />
+      <column name="livewatches.column.name.value" width="262" />
+      <column name="livewatches.column.name.max" width="261" />
+      <column name="livewatches.column.name.min" width="262" />
+      <column name="livewatches.column.name.changes" width="261" />
     </columns>
   </component>
   <component name="ProjectApplicationVersion">
@@ -185,7 +196,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761968603692</updated>
-      <workItem from="1761968605498" duration="11957000" />
+      <workItem from="1761968605498" duration="25220000" />
     </task>
     <task id="LOCAL-00001" summary="feat:this is my first commit in the final task">
       <option name="closed" value="true" />
@@ -211,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761982411462</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat:task 3 completed">
+      <option name="closed" value="true" />
+      <created>1761983271682</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761983271683</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +256,8 @@
     <MESSAGE value="feat:this is my first commit in the final task" />
     <MESSAGE value="feat:task 1 completed" />
     <MESSAGE value="feat:task 2 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:task 2 completed" />
+    <MESSAGE value="feat:task 3 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:task 3 completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
